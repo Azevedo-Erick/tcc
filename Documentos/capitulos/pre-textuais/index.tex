@@ -1,0 +1,129 @@
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+\imprimirfolhaderosto
+% ---
+
+% ---
+% Inserir folha de aprovação
+% ---
+
+% Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação
+% do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
+% imagem da página assinada pela banca com o comando abaixo:
+%
+% \includepdf{folhadeaprovacao_final.pdf}
+% \includepdf[pages={1}]{anexos/Folhadeaprovacao.pdf}
+%
+\begin{comment}
+\begin{folhadeaprovacao}
+
+  	\begin{center}
+  		\includegraphics[width=1\textwidth]{imagens/unitins.png}
+  		\ABNTEXchapterfont\Large   CURSO DE SISTEMAS DE INFORMA{\c{C}}{\~{A}}O
+  		
+  		\par
+  		\vspace*{.5cm}     
+  		{\ABNTEXchapterfont\bfseries\large \expandafter\MakeUppercase{\imprimirtitulo}  \vspace*{1cm}    }
+  		\par
+  		{\large \expandafter\MakeUppercase{\imprimirautor}}
+  		%\vspace*{\fill}
+  		\par
+  		\vspace*{.5cm}     
+  		\hspace{.45\textwidth}
+  		\begin{minipage}{.5\textwidth}
+  			\small\imprimirpreambulo
+  			
+  		\end{minipage}%
+  	%	\vspace*{\fill}
+  	\end{center}
+  
+   \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+   \assinatura{\textbf{___} \\ Examinador}
+   \assinatura{\textbf{___} \\ Examinador}
+   %\assinatura{\textbf{___} \\ Convidado 3}
+   %\assinatura{\textbf{___} \\ Convidado 4}
+      
+   \begin{center}
+    \vspace*{1cm}
+    {\large\imprimirlocal}
+    \par
+    \vspace*{0.1cm}
+    {\large\imprimirdata}
+    \vspace*{0.5cm}
+  \end{center}
+  
+\end{folhadeaprovacao}
+\end{comment}
+% ---
+
+%
+\input{Documentos/capitulos/pre-textuais/ficha_catalografica}
+\input{Documentos/capitulos/pre-textuais/folha_aprovacao}
+
+% \includepdf[pages={1}]{anexos/AVALIACAO.pdf}
+% \includepdf[pages={1}]{anexos/FICHA_CATOLOGRAFICA.pdf}
+
+% ---
+% Dedicatória
+% ---
+\include{Documentos/capitulos/pre-textuais/dedicatoria}
+% ---
+
+% ---
+% Agradecimentos
+% --- Es
+\include{Documentos/capitulos/pre-textuais/agradecimentos}
+% ---
+
+% ---
+% Epígrafe
+% ---
+\include{Documentos/capitulos/pre-textuais/epigrafe}
+% ---
+
+% ---
+% RESUMOS
+% ---
+
+\include{Documentos/capitulos/pre-textuais/abstracts/index}
+
+
+% ---
+% inserir lista de ilustrações
+% ---
+\include{Documentos/capitulos/pre-textuais/ilustracoes}
+% ---
+
+% ---
+% inserir lista de tabelas
+% ---
+\include{Documentos/capitulos/pre-textuais/tabelas}
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\include{Documentos/capitulos/pre-textuais/siglas}
+% ---
+
+
+% ---
+% inserir o sumario
+% ---
+\include{Documentos/capitulos/pre-textuais/sumario}
+% ---
+
